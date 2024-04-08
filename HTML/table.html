@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+    <style>
+        body{
+            background-image: url(image/star.ico);
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+       table, tr, th, td{
+        border: 2px solid red;
+        border-collapse:collapse;
+       }
+       th, td{
+        padding:10px;
+        text-align: center;
+       }
+       th{
+        background-color: aqua;
+        color:black;
+       }
+       tr:nth-child(even){
+        background-color:purple;
+        color:white;
+       }
+       tr:hover{
+        background-color:burlywood;
+       }
+       #button{
+        border: 1px solid red;
+        padding: 5px;
+        text-decoration: none;
+        margin-left: 100px;
+        border-radius: 5px;
+        background-color: #C2185B;
+        color:white;
+       }
+       #button:hover {
+        background-color: #880E4F;
+       }
+    </style>
+</head>
+<body>
+    <h1>Student Information</h1>
+    <table>
+        <tr>
+            <td rowspan="6">MCA Department</td>
+        </tr>
+        <tr>
+            <th>Roll. NO.</th>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Percentage</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Rahul Sharma</td>
+            <td>MCA</td>
+            <td>80%</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Sanjay Sharma</td>
+            <td>MCA</td>
+            <td>85%</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Ravi Sharma</td>
+            <td>MCA</td>
+            <td>90%</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Sanjiv Sharma</td>
+            <td>B.Tech</td>
+            <td>95%</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <a id="button" href="list.html">Open List</a>
+</body>
+</html>
